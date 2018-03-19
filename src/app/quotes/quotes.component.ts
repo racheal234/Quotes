@@ -15,6 +15,11 @@ quotes = [
  new Quote(5, 'speed so fast i felt like i was drunk','Jonas Blue'),
 ]
 
+completeQuote(isComplete,index){
+       if (isComplete){
+           this.quotes.splice(index,1);
+           }
+           }
 toogleDetails(index){
         this.quotes[index].showDescription = !this.quotes[index].showDescription;
 }
