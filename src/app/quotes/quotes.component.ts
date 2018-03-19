@@ -15,6 +15,9 @@ quotes = [
  new Quote(5, 'speed so fast i felt like i was drunk','Jonas Blue'),
 ]
 
+toogleDetails(index){
+        this.quotes[index].showDescription = !this.quotes[index].showDescription;
+}
   constructor() { }
 
   ngOnInit() {
