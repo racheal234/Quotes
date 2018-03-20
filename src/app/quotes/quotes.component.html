@@ -6,10 +6,13 @@
 </div>
 <hr>
 <ul>
-
+<div class="container quote">
     <div class="row" *ngFor='let quote of quotes;let i=index'>
-    <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
+    <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}
     <button  (click)='toogleDetails(i)'>Show Author</button>
    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+ </li>
     </div>
+  </div>
+
 </ul>
