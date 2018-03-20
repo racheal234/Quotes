@@ -1,2 +1,6 @@
 
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  background-image: url("https://cdn.wallpapersafari.com/17/77/9sOJix.jpg");
+  color: white;
+}
